@@ -1,0 +1,4846 @@
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+.navbar{
+    height:60px;
+    background-color: white;
+   display: flex;
+    align-items:center;
+   justify-content: space-evenly;   
+}
+.nav-lb{
+    display:flex;
+    justify-content: center;
+    /* align-items:center; */
+    width:400px;
+    height:40px;
+    background-color:white;
+}
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-logo{
+    height:40px;
+    width:40px;
+       background-color:white;
+}
+
+.logo {
+    background-image: url("assets/logo-symbol.png");
+   background-size: cover;
+    height:40px;
+    width:40px;
+}
+.logo-brand{
+    height:40px;
+    width:80px;
+    /* margin-left:1px; */
+    background-color:white;
+}
+
+.brandname{
+    /* margin-top:5px; */
+    font-size:1.5rem;
+    color:#007BFF;
+    background-color:white;
+}
+
+.searchbar{
+    margin-left:30px;
+    display:flex;
+    justify-content: space-evenly;
+    width:700px;
+    height:40px;
+    border-radius:4px;
+    border:2px solid rgb(53, 53, 251); 
+}
+.searchinput{
+    width:200%;
+    font-size: 1rem;
+    border:none;
+       background-color:white;
+}
+.search-select{
+    background-color:white;
+    width:100px;
+     text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+}
+.search-button{
+    width:100px;
+    background-color: rgb(53, 53, 251);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     font-size: 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border:2px solid rgb(53, 53, 251);
+}
+.search-button:hover{
+    border:2px solid white;
+}
+
+.icons{
+    margin-left:50px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    /* align-items:center; */
+    width:800px;
+    /* border:2px solid black; */
+       background-color:white;
+      
+}
+.profile{
+    font-size: 1.8rem;
+    color:gray;
+}
+.message{
+    font-size: 1.8rem;
+    color:gray;
+}
+.heart{
+    font-size: 1.8rem;
+    color:gray;
+}
+.cart{
+    font-size: 1.8rem;
+    color:gray;
+}
+
+.icon-profile{
+    width:80px;
+    height:50px;
+    background-color:white;
+transition: box-shadow 0.3s ease;
+border-radius:5px;
+    }
+    .icon-profile:hover{
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+.icon-p{
+    font-size: 1.1rem;
+    font-family:Arial;
+    color: gray;
+    background-color:white; 
+     text-decoration: none; 
+}
+
+.icon-message{
+    width:80px;
+    height:50px;
+       background-color:white;
+transition: box-shadow 0.3s ease;
+border-radius: 5px;;
+    }
+    .icon-message:hover{
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    }
+.icon-m{
+    font-size: 1.1rem;
+    font-family:Arial;
+    color: gray;
+    background-color:white;
+     text-decoration: none; 
+}
+.icon-orders{
+    width:80px;
+    height:50px;
+    background-color:white;
+transition: box-shadow 0.3s ease;
+border-radius:5px;
+    }
+    .icon-orders:hover{
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    }
+.icon-o{
+    font-size: 1.1rem;
+    font-family:Arial;
+    color: gray;
+     text-decoration: none; 
+
+       background-color:white;
+}
+.icon-cart{
+    width:80px;
+    height:50px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+transition: box-shadow 0.3s ease;
+border-radius:5px;
+    }
+    .icon-cart:hover{
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    }
+
+.icon-c{
+    font-size: 1.1rem;
+    font-family:Arial;
+    color: gray;
+     text-decoration: none; 
+     background-color:white;  
+     
+}
+ .icon-c:hover{
+        color:#6a6ee0;
+      }
+       .icon-p:hover{
+        color:#6a6ee0;
+      }
+       .icon-o:hover{
+        color:#6a6ee0;
+      }
+       .icon-m:hover{
+        color:#6a6ee0;
+      }
+.panel{
+    height: 40px;
+    background-color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:black;
+
+
+}
+.panel-all{
+    margin-left:30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+       background-color:white;
+}
+.panel-all a{
+ text-decoration: none; 
+ color:black;
+ font-weight: bold;
+
+}
+.panel-option a{
+    display:inline;
+    margin-left: 45px;
+    background-color:white;
+    text-decoration: none; 
+ color:black;
+ font-weight: bold;
+}
+.panel a:hover{
+color:#6a6ee0;
+}
+.panel-option select{
+    border:none;
+    background-color:white;
+    margin-left:40px;
+     color:black;
+ font-weight: bold;
+}
+
+.panel-option{
+    width:70%;
+    font-size:0.85rem;
+    background-color:white;
+}
+
+ .panel-language{
+    background-color:white;
+ color:black;
+ font-weight: bold;
+}
+
+.panel-country{
+    margin-right:20px;
+    background-color:white;
+display: flex;
+}
+
+.panel-language select{
+    border:none;
+     width:100px;
+     text-align: center;
+        background-color:white;
+         color:black;
+ font-weight: bold;
+
+}
+.panel-country select{
+    border:none;
+    width:100px;
+
+    text-align: left;
+    background-color:white;
+     color:black;
+ font-weight: bold;
+}
+
+.banner{
+    width:900px;
+    height:300px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px auto;
+    padding:20px;
+    border-radius:3px;
+
+}
+.bannerimg{
+   height:310px;
+   width:600px;
+    border-radius:3px;
+    background-image: url("assets/banner.png");
+
+}
+.banner-content{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+    /* margin-right:500px; */
+    margin-top:50px;
+    margin-left:25px;
+
+}
+.bannertext p{
+    font-size: 1rem;
+    margin:0;
+}
+.bannertext h2{
+    margin:5px 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.learn{
+  background-color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border:none;
+  padding:10px;
+}
+.learn:hover{
+    border:1px solid black;
+}
+.content{
+     display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 250px; 
+}
+ .login{
+    width:260px;
+    height:150px;
+    background-color: rgb(184, 212, 249);
+    border-radius: 3px;
+ 
+ }
+ .text{
+    width:200px;
+    height:50px;
+    margin-left:30px;
+    display: flex;
+    margin-top: 5px;
+    
+ }
+.user-icon{
+   margin-top:2px;
+   font-size: 2rem;
+margin-left: 2px;
+margin-top: 8px;
+ color: white;
+    background-color: transparent;
+
+ }
+ .para{
+    height:50px;
+    width:200px;
+    margin-left:0px;
+
+ }
+.para p{
+    text-align: left;
+    font-weight: bold;
+    margin-left:7px; 
+   margin-top: 5px;
+ }
+ .login button{
+    text-align: center;
+    width:220px;
+    height:30px;
+    margin:5px auto;
+    margin-left: 20px;;
+ }
+ .joinnow{
+    background-color: rgb(53, 53, 251);
+    color:white;
+    border:none;
+    border-radius: 3px;
+    
+ }
+ .joinnow:hover{
+    border: 2px solid white;
+ }
+  .loginn{
+    background-color: white;
+    color:rgb(53, 53, 251);
+    border:none;
+    border-radius: 3px;
+ }
+ .loginn:hover{
+    border:2px solid rgb(53, 53, 251);
+ }
+ .discount{
+    background-color: orangered;
+    color:white;
+    height:50px;
+    padding:10px;
+    width:240px;
+    border-radius:3px;
+    font-size:1.2rem;
+ }
+ .quotes{
+    background-color: rgb(37, 152, 187);
+    color:white;
+    height:50px;
+    padding:10px;
+    width:240px;
+    border-radius:3px;
+    font-size:1.2rem;
+ }
+
+.deals-panel{
+    width:950px;
+    height:250px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin:20px auto;
+    border-radius:3px;
+}
+.offer-box{
+    width:300px;
+    height:250px;
+    margin:0;
+    background-size: cover;
+}
+.box-deals{
+    margin-top:50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left:30px;
+}
+.box-equip{
+    margin-left:30px;
+color:rgb(176, 175, 175);
+}
+.time{
+    display:flex;
+    height:100px;
+    width:200px;
+    margin-left:30px;
+    gap:5px;
+    margin-top:20px;
+  
+
+}
+.time p{
+    text-align: center;
+    color:white;
+}
+
+.hours{
+    background-color: gray;
+    height:60px;
+    width:70px;
+      border-radius: 5px;
+}
+
+.secs{
+    background-color: gray;
+     height:60px;
+    width:70px;
+      border-radius: 5px;
+}
+.mins{
+    background-color: gray;
+      height:60px;
+    width:70px;
+      border-radius: 5px;
+}
+.days{
+    background-color: gray;
+       height:60px;
+    width:70px;
+      border-radius: 5px;
+}
+.numbers{
+    margin-top:5px ;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+.box-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.box-link .box,
+.box-link .box1,
+.box-link .boxx1 {
+    cursor: pointer;
+}
+
+ .component1{
+width:700px;/* Adjust width to fill remaining space */
+height:250px;
+display: flex;
+justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: center; /* Center items vertically within the components div */
+    padding: 0 10px; /* Add horizontal padding */
+margin-left: 0;
+ }
+ .component1 .box{
+    width:150px;
+    height:230px;
+    border-radius:3px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally within each product-box */
+    justify-content: space-between; /* Distribute space between items */
+    padding-top:10px;
+    padding-bottom:30px ;
+}
+ .component1 .box p{
+    text-align: center;
+    margin-bottom: 0px;
+}
+ .component1 .box button{
+    border-radius: 10px;
+    width:70px;
+   background-color: rgb(250, 220, 225);
+   border:none;
+   color:red;
+   font-weight: bold;
+   /* margin-bottom: 15px; */
+}
+ .component1 .box button:hover{
+    border:2px solid red;
+}
+ .component1 .pictures{
+    margin-top:20px;
+    height: 120px; /* Adjusted height for better proportion */
+    width: 120px; /* Adjusted width for better proportion */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px; /* Space between image and text */
+    border-radius: 3px; /* Match panel border-radius */
+    overflow: hidden; /* Ensure image fits within bounds */
+
+}
+.watch-img{
+    background-image: url("assets/watch.png");
+
+}
+.laptop-img{
+    background-image: url("assets/laptop.png");
+
+}
+
+.camera-img{
+    background-image: url("assets/camera.png");
+}
+.headphones-img{
+    background-image: url("assets/headphones.png");
+}
+
+ .homeOutdoor-panel{
+   width:940px;
+    height:280px;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: stretch;
+    margin:20px auto;
+    border-radius:3px;
+}
+.home-decor{
+    width:300px;
+    height:280px;
+    margin:0;
+    border-radius:3px;
+    background-image: url("assets/offer.png");
+}
+.home-decor p{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.home-decor button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.home-decor button:hover{
+    border:2px solid black;
+}
+.component2{
+    /* flex:1; */
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border:1px solid black;
+    width: 700px;
+}
+.box1{
+    height:123px;
+    border-radius:3px;
+    /* padding: 5px; */
+}
+.picture{
+    width:65px;
+    height: 60px;
+    margin-left: 90px;
+    margin-top: 0px;
+
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.vase-img{
+    background-image: url("assets/vase.png");
+        background-size: cover;
+         width:60px;
+    height: 60px;
+}
+.dishes-img{
+    background-image: url("assets/Dishrack.png");
+        background-size: cover;
+         width:60px;
+    height: 60px;
+}
+.coffee-img{
+    background-image: url("assets/coffeemix.png");
+        background-size: cover;
+         width:60px;
+    height: 60px;
+}
+.appli-img{
+   background-image: url("assets/homeapp.png");
+    background-size: cover;
+    width:80px;
+    height:60px;
+}
+.blend-img{
+       background-image: url("assets/blender.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.mixer-img{
+       background-image: url("assets/kmix.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.lamp-img{
+       background-image: url("assets/lamp.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.chair-img{
+       background-image: url("assets/chair.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+
+ .Consumer-panel{
+   width:940px;
+    height:280px;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: stretch;
+    margin:20px auto;
+    border-radius:3px;
+}
+.cons-eg{
+    width:300px;
+    height:280px;
+    margin:0;
+    border-radius:3px;
+    background-image: url("assets/cons.png");
+}
+.cons-eg p{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.cons-eg button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-weight: bold;
+
+}
+.cons-eg button:hover{
+    border:2px solid black;
+}
+.component3{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border:1px solid black;
+    width: 700px;
+}
+.boxx1{
+    height:123px;
+    border-radius:3px;
+}
+.itemss{
+font-size: 1.1rem;;
+font-weight:bold;
+margin-top: 10px;
+margin-left:20px;
+
+}
+.pricee{
+font-size:0.9rem;
+margin-left:20px;
+margin-top: 10px;
+color:gray;
+}
+.lp-img{
+    background-image: url("assets/laptop.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.hps-img{
+background-image: url("assets/headphone.png");
+    background-size: contain;
+    width:55px;
+    height:60px;
+}
+.sm-img{
+    background-image: url("assets/phone1.png");
+    background-size: cover;
+    width:60px;
+    height:60px;
+}
+.sw-img{
+     background-image: url("assets/watch.png");
+    background-size: contain;
+    width:50px;
+    height:60px;
+}
+.cm-img{
+ background-image: url("assets/camera.png");
+    background-size: contain;
+    width:60px;
+    height:40px;
+}
+.ek-img{
+     background-image: url("assets/kattle.png");
+    background-size: cover;
+    width:60px;
+    height:60px;
+}
+.gm-img{
+     background-image: url("assets/headphones.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.ht-img{
+     background-image: url("assets/heater.png");
+    background-size: contain;
+    width:60px;
+    height:60px;
+}
+.requests-panel{
+        width:950px;
+    height:300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin:20px auto;
+    border-radius:3px;
+    background: url("assets/image102.jpg");
+background-color:#007BFF;
+display:flex;
+    background-size: cover;
+}
+
+.textt{
+    width:350px;
+    height:200px;
+    margin-left: 30px;
+}
+.title{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:white;
+}
+.lorem{
+    margin-top:5px;
+    color:white
+}
+.component4{
+    width:350px;
+    height:250px;
+    background-color: white;
+    margin-left:140px;
+    border-radius: 5px;
+    padding:13px;
+    padding-left: 20px;;
+}
+.titlee{
+    margin-top:8px;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+.itemm{
+    margin-top:15px;
+    width:300px;
+    height:20px;
+    color: black;
+    font-size: 0.8rem;
+}
+.type{
+        margin-top:15px;
+    width:300px;
+    height:60px;
+    color: black;
+    font-size: 0.8rem;
+}
+.quant-pric{
+    margin-top: 15px;;
+}
+.quantity{
+    height:25px;
+}
+.quant-pric select{
+        height:30px;
+        width:100px
+}
+.component4 button{
+    margin-top: 10px;;
+    height:30px;
+    width:100px;
+    background-color: #007BFF;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-weight: bold;;
+}
+.component4 button:hover{
+    border: 2px solid gray;
+}
+.Recommended{
+         margin:20px auto;
+/* background-color: #007BFF; */
+width:900px;
+height:30px;
+margin-top:20px;
+}
+.Recommended p{
+    font-size: 1.5rem;
+    font-weight: bold;;
+}
+.recommended-panel{
+    width:930px;
+    height:250px;
+     margin:20px auto;
+     display:flex;
+}
+
+.boxx2{
+        margin-left:20px;
+    height:250px;
+    width:150px;
+    border-radius:5px;
+    background-color: white;
+        border:0.1px solid gray;
+
+}
+.price{
+    color:black;
+    font-weight:bold;
+    font-size:1rem;
+    margin-top:20px;
+    margin-left:20px;
+}
+.description{
+    color:gray;
+    font-size:0.9rem;
+    margin-left:10px;
+    margin-top:5px;
+}
+.picturesss{
+    margin-top:10px;
+    margin-left:10px;
+    height:150px;
+    width:130px;
+}
+.t-shirt{
+    background-image: url("assets/tshirt.png");
+    height:150px;
+    width:auto;
+background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.jacket{
+    background-image: url("assets/jacket.png");
+    height:135px;;
+    width:auto;
+background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.coat{
+    background-image: url("assets/coat.png");
+    height:140px;
+    width:auto;
+    background-repeat: no-repeat;
+background-size: contain;
+}
+.wallet{
+    background-image: url("assets/wallet.png");
+    height:148px;
+    width:auto;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.bag{
+    background-image: url("assets/bag.png");
+    height:150px;
+    width:auto;
+background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.recommendedd-panel{
+    width:930px;
+    height:250px;
+     margin:20px auto;
+     display:flex;
+}
+.shorts{
+     background-image: url("assets/shorts.png");
+    height:135px;
+    width:auto;
+background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.office{
+     background-image: url("assets/office.png");
+    height:150px;
+    width:auto;
+    background-repeat: no-repeat;
+background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.watcch{
+     background-image: url("assets/watch.png");
+    height:150px;
+    width:auto;
+background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.mobilee{
+     background-image: url("assets/canon.png");
+    height:150px;
+    width:auto;
+background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.headphones{
+     background-image: url("assets/headphone.png");
+    height:150px;
+    width:auto;
+background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Services{
+         margin:20px auto;
+width:900px;
+height:30px;
+margin-top:20px;
+}
+.Services p{
+    font-size: 1.5rem;
+    font-weight: bold;;
+}
+.servicess-panel{
+    width:930px;
+    height:200px;
+    margin:20px auto;
+    display: flex;
+
+}
+.service1{
+    width:250px;
+    height:170px;
+    border:1px solid gray;
+        border-radius:5px;
+        margin-left:10px;
+        background-color: white;
+        position: relative; /* Add this to position the icon */
+
+}
+.service1 p{
+    margin-top: 5px;;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 10px;;
+}
+.picturres{
+    height:120px;
+    width:auto;
+}
+.pic1{
+    background: url("assets/pic1.png");
+    height: 120px;
+    width:auto;
+}
+.pic2{
+    background: url("assets/pic2.png");
+    height: 120px;
+    width:auto;
+}
+.pic3{
+    background: url("assets/pic3.png");
+    height: 120px;
+    width:auto;
+}
+.pic4{
+    background: url("assets/pic4.png");
+    height: 120px;
+    width:auto;
+}
+.icon{
+    margin-top:90px;
+   width: 40px;
+    height: 40px;
+    background-color: gray;
+    margin-left: auto; 
+    margin-right: 10px; 
+    position: absolute; /* Position it absolutely within .service1 */
+    top: 10px;   
+    right: 10px;   
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;   
+    font-size: 1.2em; 
+}
+.icon i {
+  /* Fixes the display of the icon */
+  display: block;
+}
+.Regions{
+         margin:20px auto;
+width:900px;
+height:30px;
+margin-top:20px;
+}
+.Regions p{
+    font-size: 1.5rem;
+    font-weight: bold;;
+}
+.countries-panel{
+    width:950px;
+    height:80px;
+    margin:20px auto;
+     display:flex;
+}
+.bbox{
+    width:210px;
+    height:60px;
+    margin-left:10px;
+    display: flex;
+}
+.bbox h5{
+    margin-top:10px;
+    margin-left:5px;
+    font-size: 0.8rem;;
+}
+.bbox p{
+    margin-left:5px;
+    font-size:0.9rem;
+}
+.pict{
+    height:60px;
+    width:80px;
+}
+.uae{
+    background: url("assets/UAE.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.aus{
+    background: url("assets/AUS.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.rus{
+    background: url("assets/RUSSIA.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.usa{
+    background: url("assets/USA.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.ital{
+    background: url("assets/ITALY.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.uk{
+    background: url("assets/UK.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.fran{
+    background: url("assets/FRANCE.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.den{
+    background: url("assets/DEN.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.china{
+    background: url("assets/CHINA.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.ger{
+    background: url("assets/GER.png");
+ height:58px;
+    width:auto;
+background-size: contain;
+}
+.newsletter-panel{
+    height:130px;
+    width:100%;
+    background-color: #ebe7e7;
+    padding:5px;
+}
+.newsletter{
+    width:700px;
+    height:90px;
+    margin:20px auto;
+}
+.newsletter p{
+    margin-top: 10px;;
+    text-align: center;
+}
+.subscribe{
+    margin-top: 50px;;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.newsletter input{
+    margin-left:230px;
+    margin-top:20px;
+    height:20px;
+    width:200px;
+}
+.newsletter button{
+    height:25px ;
+    width:90px;
+    background-color: #007BFF;
+    border:none;
+    border-radius: 5px;;
+    color:white;
+    font-weight: bold;
+}
+.newsletter button:hover{
+    border: 2px solid white;;
+}
+.main-footer { /* This is your <footer> tag */
+    background-color: #f8f8f8;
+    padding: 50px 80px 20px; /* Top, horizontal, bottom padding */
+    display: flex; /* Make the footer itself a flex container */
+    flex-direction: column; /* Stack the content wrapper and copyrights vertically */
+    gap: 40px; /* Vertical gap between footer-content-wrapper and copyrights */
+    align-items: center; /* Center content horizontally if it's less than 100% width */
+}
+.footer-panel{
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:#f5f5f5;
+
+}
+.footer-column {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px; /* Adjust spacing between columns */
+        }
+
+        .footer-column:last-child {
+            margin-right: 0;
+        }
+
+        .brand-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 80px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .brand-logo i {
+            font-size: 28px;
+            color:#007BFF; /* A shade of blue similar to the image */
+            margin-right: 10px;
+        }
+
+        .brand-logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+             color:#007BFF;
+        }
+
+        .brand-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-icon:hover {
+            background-color: #6a6ee0;
+            color: #fff;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #6a6ee0;
+        }
+
+        .app-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .app-button img {
+            width: 140px; /* Adjust as needed */
+            height: auto;
+            border-radius: 8px; /* Slightly rounded corners for app store buttons */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+.copyrights {
+    /* Base styles - these apply by default */
+    background-color: #ebe7e7;
+    padding: 0 50px; /* Adjust horizontal padding as per your design */
+    height: 50px; /* Fixed height for desktop */
+    margin-top: 20px; /* Space between the main footer content and copyrights */
+    width: 100%; /* Ensure it spans the full width of its parent */
+    box-sizing: border-box; /* Include padding in the width calculation */
+
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    font-size: 14px;
+    color: #555;
+    /* flex-wrap: nowrap; - This is default for flex items, usually not needed here unless overridden elsewhere */
+}
+
+.copyrights p {
+    margin: 0; /* Remove default paragraph margins to prevent extra space */
+} 
+  .page-container{
+    display: flex;
+    gap:20px;
+    padding:20px;
+    max-width: 1200px;
+    margin:0 auto;
+  }  
+/*sidebar-section*/
+.sidebar{
+    flex:0 0 250px;
+    background-color: white;
+    padding: 20px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar-section{
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+    padding-bottom: 20px; 
+} 
+.sidebar-section:last-child {
+    border-bottom: none; /* No border for the last section */
+    margin-bottom: 0;
+    padding-bottom: 0;
+} 
+.sec-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    cursor: pointer; /* For dropdown toggles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar-section ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: block;
+    padding: 3px 0;
+}
+
+.sidebar-section ul li a:hover {
+    color: #007bff;
+}
+
+.sidebar-section ul li a.active {
+    color: #007bff;
+    font-weight: bold;
+} 
+.filter-op label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.filter-op input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #007bff; /* Custom checkbox color */
+}
+
+/* See All Button */
+.seeAll {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 0;
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+.seeAll:hover {
+    text-decoration: underline;
+}
+.collapsed-list {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Smooth animation */
+}
+
+.collapsed-list.expanded {
+    max-height: 500px; /* Adjust based on content. A large value ensures all content is visible */
+    transition: max-height 0.5s ease-in; /* Faster on expand */
+}
+
+.dropdown-cont {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    padding-top: 5px; /* Space from title */
+}
+
+.dropdown-cont.show {
+    max-height: 200px; /* Adjust as needed */
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.sec-title i {
+    transition: transform 0.3s ease; /* Smooth rotation for icon */
+}
+
+.sec-title.active i {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+
+.dropdown-cont .slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dropdown-cont button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.dropdown-cont button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-cont input[type="radio"] {
+    margin-right: 5px;
+}
+
+.dropdown-cont input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+} 
+
+    /* products list */
+.main-container{
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding:20px;
+    border-radius: 5px;;
+}
+    .featured{
+        height:40px;
+        width:95%;
+        background-color:white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin:20px auto;
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+
+    }
+    .featured select{
+                margin-top:5px;
+
+width:100px;
+height:30px;
+border-radius: 5px;;
+margin-left: 20px;;
+    }
+    .featured p{
+        margin-top: 10px;;
+        margin-left: 10px;
+    }
+    .featured label{
+        margin-top: 10px;;
+        margin-left: 20px;
+
+    }
+    .fii{
+        margin-left: 20px;;
+        display:flex;
+    }
+    .fi{
+        margin-top:5px;
+width:40px;
+height:30px;
+border:1px solid gray;
+border-radius: 5px;;
+    }
+
+    .Barrs{
+       margin-top:2px;
+margin-left: 10px;; 
+font-size: 1.5rem;
+    }
+    .fi:hover{
+        background-color:#dcdada;
+    }
+    .fi.active-layout {
+    background-color: #dcdada; 
+}
+    .Cells{
+       margin-top:2px;
+margin-left: 9px;; 
+font-size: 1.5rem;
+    }
+    .Cells:hover{
+        background-color:#dcdada;
+
+    }
+    .container{
+        height:150px;
+        width:95%;
+        margin:20px auto;
+        border-radius:5px;
+        display:flex;
+        background-color: white;;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+transition: box-shadow 0.3s ease;
+    }
+    .container:hover{
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    }
+.piiictures{
+    margin-top: 5px;
+    height:130px;
+    width:90px;
+    background-size: cover;
+}
+.piiictures img{
+     height:130px;
+    width:120px; 
+}
+    .details{
+        margin-top:5px;
+        flex-direction: column;
+        height:70px;
+        margin-left: 40px;
+    }
+    .details li i{
+        color:  rgb(243,181,25) ;  
+    }
+    .tiitle{
+        font-weight: 600;
+    }
+    .rating{
+        color:rgb(243,181,25);
+    }
+    .orderss{
+        color:gray;
+    }
+    .shipping{
+        color:green;
+        font-weight: 550;
+    }
+    .details div{
+        display: flex;
+    }
+    .circle{
+        margin-left: 15px;;
+        margin-right: 15px;;
+        font-size: 0.5rem;
+        margin-top: 5px;;
+        color: lightgrey;
+    }
+    .des{
+        font-size: 0.9rem;
+        margin-top: 2px;;
+        margin-bottom: 5px;
+    }
+    .amount{
+        font-weight: 900;
+        margin-bottom: 5px;;
+    }
+    .details a{
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: 600;
+    }
+    .details a:hover{
+        color:#6a6ee0;
+    }
+    .fav{
+        height:30px;
+        width:30px;
+position: absolute;
+top: 10px;   
+    right: 10px;   
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color:#007BFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+transition: box-shadow 0.3s ease;
+    }
+    .fav:hover{
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .entries{
+        width:600px;
+        height:40px;
+        margin: 20px auto;
+        display: flex;
+    }
+.show{
+    width:80px;
+height:30px;
+border-radius: 5px;;
+margin-left:300px;
+}
+.pagination{
+    width:200px;
+margin-left:40px;
+
+}
+.pagination button{
+    padding:5px;
+    background-color: white;
+    border:none;
+    border:1px solid gray;
+}
+.product-list.grid-view{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr)) ;
+    gap:20px;
+    padding:20px;
+    justify-content: center;
+}
+.product-list.grid-view .container{
+     height: auto; 
+    width: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0; 
+    padding: 15px; 
+    text-align: center;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+.product-list.grid-view .piiictures {
+    margin-top: 0; 
+    height: 180px; 
+    width: 180px; 
+    margin-bottom: 15px; 
+ display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list.grid-view .piiictures img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+}
+
+.product-list.grid-view .details {
+    margin-left: 0;
+    text-align: center; 
+    height: auto; 
+}
+.product-list.grid-view .des,
+.product-list.grid-view .orderss,
+.product-list.grid-view .shipping,.product-list.grid-view .circle
+{
+    display: none;
+}
+.product-list.grid-view li{
+   margin-left: 20px;
+}
+.product-list.grid-view .fav {
+    top: 10px;
+    right: 10px;
+}
+/* details page */
+.pic-des{
+    width:900px;
+    height:400px;
+    background-color: white;
+    margin:20px auto;
+    background-color:#f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-evenly;
+}
+.pics{
+    margin-top: 20px;;
+    width:230px;
+    height:250px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.descriptionss{
+    width:350px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    height:360px;
+    margin-top:5px;
+    flex-direction: column;
+       background-color: white;
+}
+ .descriptionss li i{
+        color:  rgb(243,181,25) ;
+        font-size:0.7rem;  
+}
+.descriptionss div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.descriptionss .circle{
+    margin-left: 2px;
+    margin-right: 2px;;
+}
+.stars{
+    margin-left: 2px;;
+}
+.descriptionss .orderss,.descriptionss .rating{
+    font-size: 13px;
+}
+.descriptionss .rating{
+    margin-top: 2px;;
+}
+.dots,.basket{
+    color:gray;
+}
+.pprices-div{
+    width:300px;
+    margin:10px auto;
+    height:60px;
+    background-color: rgb(249, 202, 185);
+    display: flex;
+  
+}
+
+.block{
+    width:70px;
+    height:40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block h4{
+    text-align: center;
+}
+.block p{
+font-size: 0.9rem;
+ display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+.suppliers{
+    background-color: white;
+    width:200px; 
+    height:300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+margin-top:20px;
+border-radius: 5px;
+}
+.sup-text{
+    font-size:1.2rem;
+    font-weight :bold;
+    margin-top:5px;
+    margin-left: 34px;; 
+}
+.info{
+    margin-top:10px;
+    margin-left: 30px;
+    font-size: 0.9rem;;
+    color:#666;
+}
+.inquiry{
+     margin-top:15px;
+    margin-left:30px;
+    padding:10px;
+    width:150px;
+    color:#f5f5f5;
+    background-color: #007bff;
+    border:none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;;
+}
+.sellprof{
+    margin-top:10px;
+    margin-left:30px;
+      padding:10px;
+    width:150px;
+       background-color:white;
+    color: #007bff;
+    border:none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+    border-radius: 5px;;
+}
+.inquiry:hover{
+    border:1px solid white;
+}
+.sellprof:hover{
+    border:1px solid #007bff;
+}
+.saved{
+    color:#007bff;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 40px;
+}.Tabble{
+    margin-top:20px;
+    background-color: white;
+    border:none;
+}
+.Tabble td{
+    text-align: left;
+    font-weight: lighter;
+    font-size:smaller;
+}
+.Tabble th{
+    font-weight: lighter;
+    font-size:smaller;
+    color:gray;
+    background-color: white;
+}
+.review-description{
+    background-color: white;;
+    width:900px; 
+    height:420px;
+     margin: 20px auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+      border-radius:20px auto;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top:10px;
+      border-radius: 5px;
+}
+
+
+
+.review-description .panel1{
+    height:400px;
+    width:500px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+
+}
+.heading-panel{
+    width:100%;
+    height:30px;
+    display: flex;
+}
+li{
+   list-style: none;
+}
+.heading-panel li {
+    margin-top:5px;
+    margin-left:20px;
+    text-decoration: none;
+ 
+    color:#666;
+}
+.heading-panel a:hover{
+color:#007BFF;
+text-decoration: underline;
+}
+.review-description .panel1 p{
+    font-size:0.9rem;
+    margin-left:10px;
+} 
+table
+{
+    width:300px;
+    text-align: left;
+border:2px solid black;
+margin:5px auto;
+}
+th{
+    background-color: #d8d6d6;
+
+}
+     .review-description .panel2 {
+        background-color: white;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      height:380px;
+    }
+.cartii .bicon{
+    margin-top:10px;
+    margin-left:20px;
+    background-color: white;
+    color:#007BFF;
+    border:none;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+width:50px;
+height:40px;
+}
+.buy{
+    width:100px;height:40px;
+    background-color: white;
+    color:#007BFF;
+    border:none;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+}
+    .box-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .box {
+       display: flex;
+      flex-direction: row; /* forces horizontal layout */
+      align-items: center;
+      width:220px;
+      height:40px;
+      padding: 10px;
+    }
+
+    .picss-box {
+                background-color: white;
+
+      height: 50px;
+      width: 80px;
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat;
+      border: 1px solid #ccc;
+      margin-right: 15px;
+      flex-shrink: 0;
+
+    }
+
+    .details-box p {
+      /* line-height: 1.3; */
+     margin-bottom: auto;
+    margin-right: 10px;;
+    font-size:12px ;
+    font-weight: bold;
+    display: block;
+    }
+   .details-box .price {
+      color: gray;
+      font-size: 13px;
+      margin-top: 5px;
+      text-align: center;
+      margin-bottom: auto;
+
+    }
+.related-products{
+    width:900px;
+    height:350px;
+    margin:20px auto;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+border-radius: 5px;;
+
+
+}
+.related-products h3{
+    margin-left:30px;
+      margin-bottom:auto;
+      font-size: medium;
+}
+.box-panell{
+    display: flex;
+}
+.related-products .box{
+    margin-top: 5px;;
+    width:150px;
+    height:300px;
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+margin-left:7px
+}
+.related-products .pics-box{
+    width:150px;
+    height:200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.related-products .pricee{
+color:gray;
+font-weight: bold;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.super-dis{
+    width:850px;
+    height:40px;
+    padding:40px;
+    margin:20px auto;
+    background-color: #007BFF;
+    border-radius: 5px;;
+    margin-bottom: 70px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+.super-dis h3{
+    font-size: 25px;
+}
+.super-dis p{
+    color:whitesmoke
+}
+.super-dis button{
+
+    padding:10px;
+    width:100px;
+    background-color: rgb(236, 91, 39);
+    border:none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+
+/* cart page */
+.cart-heading{
+    width:930px;
+    height:30px;
+    margin:20px auto;
+}
+.cart-panel{
+    width:900px;
+    height:400px;
+    margin:20px auto;
+    padding:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxx-panell{
+    width:500px;
+    height:400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+    background-color: white;
+    border-radius: 5px;;
+}
+.boxx-panell .box{
+    width:450px;
+    height:80px;
+    margin:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.pict-box{
+    width:60px;
+    height:60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.boxx-panell .details-box{
+    width:290px;
+    height:60px;;
+    margin-right:auto;
+    margin-left:10px;
+}
+.boxx-panell p{
+    text-align: left;   
+}
+.boxx-panell .seller{
+    color:gray;
+    font-weight:200;
+    font-size:12px;
+}
+.boxx-panell .quality{
+     color:gray;
+    font-weight:200;
+    font-size:12px;
+}
+.boxx-panell .savefl{
+    width:100px;
+    border-radius:5px;
+    padding:5px;
+    background-color: white;
+    color:#007bff;
+
+}
+.boxx-panell .remove{
+      width:70px;
+    border-radius:5px;
+    padding:5px;
+    margin-left:5px;
+    background-color: white;
+    color:red;
+
+}
+.boxx-panell button:hover{
+border:1px solid gray;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+
+}
+.buttonss{
+margin-bottom:auto;
+    width:450px;
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.btn-bfs{
+    margin-left:30px;
+    width:100px;
+    height: 40px;;
+ background-color:#007BFF;
+    color: white;;
+    font-weight: bold;
+     border-radius:5px;border: none;
+}
+.btn-ra{
+    width:100px;
+    height: 40px;; 
+    color:#007BFF;
+    background-color: white;;
+font-weight: bold;
+ border-radius:5px;
+ border:none;
+}
+
+.price-qtyBox p{
+    text-align: right;
+    font-weight: bold;
+}
+.price-qtyBox .qtyy{
+    margin-top: 10px;
+width:100px;
+height:20px;
+}
+.cupon-panel{
+    width:300px;
+    height:90px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+background-color: white;
+padding:5px;
+border-radius:5px;
+
+}
+.cupon-panel h4{
+   
+    margin-left:20px;
+}
+.cupon-panel input{
+        margin-left:20px;
+            margin-top:5px;
+border-radius:5px;
+border:1px solid gray;
+height:40px;
+}
+.cupon-panel button{
+    height:45px;
+    width:70px;
+    color:#007BFF;
+    background-color: white;
+font-weight: bold;
+border:none;
+border-radius:5px;
+}
+.cupon-panel button:hover{
+    border:1px solid gray;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+
+}
+.subtotal{
+    width:300px;
+    height:230px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+background-color: white;
+padding:1px;
+margin-top:20px;
+border-radius:5px;
+}
+.subtotal table {
+   border:none;
+    width:250px;
+    margin-top:10px;
+}
+.subtotal td{
+    text-align: right;
+}
+.subtotal th{
+    font-weight: lighter;
+    background-color: white
+}
+.dd{
+    color:red;
+}
+.tt{
+    color:green;
+}
+.totall th,td{
+    font-weight: bold;;
+    font-size:17px;
+}
+.subtotal button{
+    padding:5px;
+    width:200px;
+    height:40px;
+    font-weight: bold;
+    font-size: large;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+margin-top: 5px;;
+margin-left:40px;
+}
+
+.add-info{
+    width:900px;
+    height:70px;
+    display:flex;
+    margin:20px auto;
+}
+.Box1{
+    display: flex;
+    justify-content: space-evenly;
+    width:200px;
+}
+.ii{
+    color:gray;
+    width:30px;
+    height:30px;
+    background-color: lightgray;
+    text-align: center;
+    font-size:large;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Box1 p{
+    margin-top:5px;
+    margin-right: 20px;
+}
+
+.sfLater-panel{
+    width:900px;
+    height:350px;
+    margin:20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+background-color: white;
+padding: 1px;
+}
+.sfLater-panel h3{
+
+    margin-left: 20px;
+}
+.Boxx-panel{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Boxx{
+    width:200px;
+    height:350px;
+    margin-left:5px;
+}
+.Picss{
+    width:200px;
+    height:200px;
+    margin:10px auto;
+       background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+
+.Boxx p{
+    margin-top:5px;
+    margin-left: 10px;;
+}
+.ptag{
+    font-weight: bold;
+    font-size: large;
+}
+.dtag{
+    font-size: small;
+    color:gray;
+}
+.Boxx button{
+    margin-top:10px;
+    margin-left:30px;
+    padding:4px;
+    width:130px;
+    background-color: white;
+    color:#007bff;
+    font-weight: bold;;
+    border-radius: 5px;
+    border:none;;
+}
+.Boxx button:hover{
+    border:1px solid gray;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;  
+
+}
+/* --- Media Queries for Mobile Responsiveness --- */
+
+/* Small devices (phones, 600px and down) */
+@media  (max-width: 600px) {
+  .navbar {
+    height: auto;
+
+  }
+
+  .nav-lb {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  .searchbar {
+    width: 100%;
+  margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .search-select,
+  .search-button {
+    width: 70px; /* Adjust button and select width */
+  }
+
+  .icons {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+  }
+
+  .icon-profile,
+  .icon-message,
+  .icon-orders,
+  .icon-cart {
+    width: 60px; /* Smaller icon boxes */
+    height: 45px;
+  }
+
+  .icon-p,
+  .icon-m,
+  .icon-o,
+  .icon-c {
+    font-size: 0.9rem; /* Smaller text for icons */
+  }
+
+  .panel {
+    height: auto;
+    padding: 5px;
+    align-items: flex-start;
+  }
+
+  .panel-all {
+    margin-left: 10px;
+  }
+
+  .panel-option {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .panel-option a,
+  .panel-option select {
+    justify-content: space-evenly;
+    margin-left: 0;
+    display: inline; /* Make links/selects block-level for better touch */
+    
+  }
+
+  .panel-language,
+  .panel-country {
+
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .bannerimg {
+    width: 100%;
+    height: 300px; /* Smaller banner image */
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .banner-content {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .content {
+    width: 100%; /* Full width for content boxes */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .login {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .text {
+    width: auto;
+    margin-left: 15px;
+  }
+
+  .login button {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .discount,
+  .quotes {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    height: auto;
+  }
+
+  .deals-panel,
+  .homeOutdoor-panel,
+  .Consumer-panel,
+  .requests-panel,
+  .recommended-panel,
+  .recommendedd-panel,
+  .servicess-panel,
+  .countries-panel {
+    flex-direction: column;
+    width: 90%;
+    height:50%;
+    margin: 10px auto;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .offer-box {
+  width:50%;
+  }
+.offer-box{
+}
+  .component1,
+  .component2,
+  .component3,
+  .component4 {
+    width: 30%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .component1 .box,
+  .box1,
+  .boxx1,
+  .boxx2,
+  .service1,
+  .bbox {
+    width: 30%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+.homeOutdoor-panel{
+    flex-direction: column;
+}
+.home-decor ,.cons-eg{
+    margin:auto;
+    width: 400px;
+    height:200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .component2 ,.component3{
+    grid-template-columns: repeat(3, 0.5fr); /* 2 columns for smaller grids */
+    justify-content: space-evenly;
+      border:none;
+  }
+  .component2 .box1,.component3 .boxx1
+  {
+    height:20%;
+    width:fit-content;
+  
+  }
+
+  .requests-panel {
+   height:10%;
+  }
+.textt{
+     margin:none;
+     height:fit-content;
+     width:auto;
+text-align: center;
+}
+  .component4 {
+    margin: 10px;;
+    width: 90%;
+    padding: 15px;
+    
+  }
+
+  .recommended-panel,.recommendedd-panel{
+    width:80%;
+    display: flex;
+    margin:2px auto;
+    flex-direction: column;
+    gap:5px;
+
+  }
+  .boxx2{
+    height:100px;
+    width:250px;
+    display: flex;;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .picturesss{
+    height:90%;
+width:50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+  }
+  .t-shirt,.jacket,.coat,.wallet,.bag,.shorts,.office,.watcch,.mobilee,.headphones{
+    height:90%; }
+
+  .seccc{
+    margin-left:5px;
+  }
+  .newsletter-panel {
+    height:auto;
+    padding: 15px;
+  }
+
+  .newsletter {
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  .newsletter input {
+    margin-left: 0;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .newsletter button {
+    display: block;
+    margin: 10px auto;
+  }
+.main-footer {
+        padding: 30px 20px 15px;
+        gap: 25px; /* Adjust vertical gap */
+    }
+.footer-panel {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 30px 20px; /* Adjust padding for mobile */
+        gap: 30px; /* Add more vertical space between stacked sections */
+        align-items: flex-start; /* Align stacked content to the left */
+        /* If your footer container has a fixed width on desktop, remove it here: */
+        width: auto; /* Let it adapt to the viewport width */
+        max-width: 100%;
+        margin: 0; /* Remove auto margins if present from desktop */
+        justify-content: space-evenly;
+    }
+
+    .brand-section {
+        margin-right: 0; /* No right margin when stacked */
+        width: 100%; /* Take full width */
+        align-items: center; /* Center brand logo and description */
+        text-align: center; /* Center text within this section */
+    }
+
+    .brand-description {
+        max-width: 90%; /* Limit width of description for readability, but make it wider than 250px */
+        margin-left: auto; /* Center the description */
+        margin-right: auto;
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons */
+        width: 100%; /* Take full width to help centering */
+    }
+
+    /* Adjust general footer columns */
+    .footer-column {
+        margin-right: 5px; /* Remove horizontal margin when stacked */
+        width: 100%; /* Take full width */
+        align-items: center; /* Center column content (heading, list) */
+        text-align: center; /* Center text within columns */
+        justify-content: space-between;
+        gap:5px;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 15px; /* Adjust heading margin */
+    }
+
+    .footer-column ul {
+        width: 100%; /* Ensure ul takes full width to center list items */
+    }
+    .footer-column ul li {
+        margin-bottom: 8px; /* Reduce list item spacing */
+    }
+    .footer-column ul li a {
+        font-size: 13px; /* Smaller font size for links */
+    }
+ .footer-column:last-child {
+           
+        }
+    /* Adjust app download buttons column */
+    .app-buttons {
+        align-items: center; /* Center app buttons vertically */
+    }
+
+    .app-button img {
+        width: 120px; /* Smaller app button images */
+    }
+
+    /* Adjust copyrights section */
+    .copyrights {
+        height: auto; /* Allow height to adapt to content on mobile */
+        padding: 15px 20px; /* Adjusted padding for smaller screens */
+        text-align: center; /* Ensure text is centered */
+        font-size: 12px; /* Smaller copyright text for mobile */
+        /* If padding-left was explicitly set higher on desktop, reset it for consistency */
+        padding-left: 20px; /* Make sure this matches padding-right if you want equal horizontal padding */
+        padding-right: 20px; /* Explicitly set padding-right if using padding-left */
+        margin-top: 15px; /* Slightly reduce top margin for mobile */
+        /* flex-wrap: nowrap; - Still not typically necessary here as it's a single line of text */
+    }
+ 
+
+  /* Specific adjustments for product listings (main-container) */
+  .page-container {
+    flex-direction: row; /* Stack sidebar and main content */
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 10%;
+    margin-bottom: 20px;
+  }
+
+  .main-container {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .featured {
+    width:90%;
+    height: 5%;
+    padding: 10px;
+    align-items: flex-start;
+justify-content:space-evenly;
+  }
+
+  .featured select {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fii {
+    width: 100%;
+    justify-content: flex-end; /* Align view buttons to the right */
+  }
+
+  .container {
+    flex-direction: row ;/* Stack image and details in list view */
+    height: fit-content;
+    width:90%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .piiictures {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 150px; /* Adjust image size for list view on small screens */
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .piiictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .details div {
+    justify-content: center; /* Center rating and orders */
+  }
+
+  .des, .shipping, .circle {
+    font-size: 0.85rem;
+  }
+
+  .entries {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .show {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .pagination {
+    margin-left: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Grid view adjustments for small screens */
+  .product-list.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product-list.grid-view .container {
+    padding: 10px;
+  }
+
+  .product-list.grid-view .piiictures {
+    height: 120px;
+    width: 120px;
+  }
+  .pic-des {
+        width: 95%; /* Make it fluid for smaller screens */
+        height: auto; /* Adjust height automatically */
+        min-height: 300px; /* Ensure minimum height */
+        margin: 15px auto; /* Adjust margin */
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center content */
+        align-items: center; /* Center content horizontally */
+        padding: 10px; /* Add some padding */
+        box-sizing: border-box; /* Include padding in width/height */
+    }
+
+    .pics {
+        margin-top: 15px; /* Adjust margin */
+        width: 90%; /* Fluid width */
+        max-width: 250px; /* Cap the max width */
+        height: 200px; /* Keep consistent height */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .descriptionss {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 20px; /* Adjust margin */
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px; /* Add padding */
+        box-sizing: border-box;
+    }
+
+    .descriptionss li i {
+        color: rgb(243, 181, 25);
+        font-size: 0.8rem; /* Slightly larger for touch */
+    }
+
+    .descriptionss div {
+        margin-top: 10px; /* Adjust margin */
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center wrapped items */
+        text-align: center;
+    }
+
+    .descriptionss .circle,
+    .stars {
+        margin: 0 5px; /* Adjust spacing */
+    }
+
+    .descriptionss .orderss,
+    .descriptionss .rating {
+        font-size: 14px; /* Slightly larger font */
+    }
+
+    .pprices-div {
+        width: 90%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 70px; /* Ensure enough height */
+        margin: 15px auto; /* Adjust margin */
+        background-color: rgb(249, 202, 185);
+        display: flex;
+        flex-direction: column; /* Stack price blocks vertically */
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .block {
+        width: 100%; /* Full width within its parent */
+        height: auto;
+        margin-bottom: 8px; /* Space between stacked blocks */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block h4 {
+        text-align: center;
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .block p {
+        font-size: 0.95rem; /* Slightly larger font */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .suppliers {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 250px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 15px; /* Add padding */
+        box-sizing: border-box;
+        text-align: center; /* Center content */
+    }
+
+    .sup-text {
+        font-size: 1.3rem; /* Larger font */
+        font-weight: bold;
+        margin-top: 10px; /* Adjust margin */
+        margin-left: 0; /* Remove fixed margin */
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 0; /* Remove fixed margin */
+        font-size: 0.95rem; /* Slightly larger font */
+        color: #666;
+    }
+
+    .inquiry,
+    .sellprof {
+        margin-top: 15px;
+        margin-left: auto; /* Center buttons */
+        margin-right: auto; /* Center buttons */
+        display: block; /* Make them block elements to stack */
+        padding: 12px; /* Increase padding for tap targets */
+        width: 80%; /* Fluid width */
+        max-width: 200px; /* Cap max width */
+        font-size: 1rem; /* Larger font for buttons */
+        box-sizing: border-box;
+    }
+
+    .sellprof {
+        margin-top: 10px; /* Space between buttons */
+    }
+
+    .inquiry:hover {
+        border: 1px solid white;
+    }
+
+    .sellprof:hover {
+        border: 1px solid #007bff;
+    }
+
+    .saved {
+        color: #007bff;
+        font-weight: bold;
+        margin-top: 20px; /* Adjust margin */
+        margin-left: 0; /* Remove fixed margin */
+        text-align: center; /* Center text */
+    }
+
+    .Tabble {
+        margin-top: 20px;
+        background-color: white;
+        border: none;
+        width: 95%; /* Fluid width */
+        margin-left: auto; /* Center table */
+        margin-right: auto; /* Center table */
+        box-sizing: border-box;
+    }
+
+    .Tabble td {
+        text-align: left;
+        font-weight: lighter;
+        font-size: small;
+        padding: 8px 5px; /* Adjust padding */
+    }
+
+    .Tabble th {
+        font-weight: lighter;
+        font-size: small;
+        color: gray;
+        background-color: white;
+        padding: 8px 5px; /* Adjust padding */
+    }
+
+    .review-description {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 350px;
+        margin: 15px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column; /* Stack panels vertically */
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .review-description .panel1 {
+        height: auto; /* Adjust height */
+        width: 95%; /* Fluid width */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; /* Space between stacked panels */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .heading-panel {
+        width: 100%;
+        height: auto; /* Adjust height */
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    .heading-panel li {
+        margin: 5px 10px; /* Adjust margin for wrapped items */
+        text-decoration: none;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .heading-panel a:hover {
+        color: #007BFF;
+        text-decoration: underline;
+    }
+
+    .review-description .panel1 p {
+        font-size: 0.9rem;
+        margin-left: 0; /* Remove fixed margin */
+        text-align: center; /* Center text */
+        padding: 0 10px; /* Add padding */
+    }
+
+    table {
+        width: 95%; /* Fluid width */
+        text-align: left;
+        border: 1px solid #ccc; /* Lighter border */
+        margin: 10px auto; /* Center table */
+        font-size: 0.85rem;
+    }
+
+    th {
+        background-color: #e0e0e0; /* Lighter background */
+        padding: 8px;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    .review-description .panel2 {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        font-family: Arial, sans-serif;
+        height: auto; /* Adjust height */
+        min-height: 280px;
+        box-sizing: border-box;
+    }
+
+    .cartii .bicon,
+    .buy {
+        margin-top: 10px;
+        margin-left: auto; /* Center buttons */
+        margin-right: auto; /* Center buttons */
+        width: 80%; /* Fluid width */
+        max-width: 150px; /* Cap max width */
+        height: 45px; /* Larger tap target */
+        background-color: white;
+        color: #007BFF;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        display: block; /* Make them block to stack */
+        font-size: 1rem;
+    }
+
+    .buy {
+        margin-top: 15px;
+    }
+
+    .box-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Increase gap */
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 60px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #eee; /* Subtle border for boxes */
+        border-radius: 5px;
+    }
+
+    .picss-box {
+        background-color: white;
+        height: 60px; /* Adjust size */
+        width: 90px; /* Adjust size */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        margin-right: 10px; /* Adjust margin */
+        flex-shrink: 0;
+    }
+
+    .details-box p {
+        margin-bottom: 5px; /* Adjust margin */
+        margin-right: 5px; /* Adjust margin */
+        font-size: 13px; /* Slightly larger font */
+        font-weight: bold;
+        display: block;
+    }
+
+    .details-box .price {
+        color: gray;
+        font-size: 14px; /* Slightly larger font */
+        margin-top: 5px;
+        text-align: left; /* Align price with text */
+        margin-bottom: auto;
+    }
+
+    .related-products {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .related-products h3 {
+        margin-left: 10px; /* Adjust margin */
+        margin-bottom: 10px; /* Space below heading */
+        font-size: large;
+        text-align: center; /* Center heading */
+    }
+
+    .box-panell {
+        display: flex;
+        flex-direction: column; /* Stack related products vertically */
+        align-items: center; /* Center items */
+        gap: 15px; /* Space between stacked products */
+    }
+
+    .related-products .box {
+        margin-top: 0;
+        width: 90%; /* Fluid width */
+        max-width: 250px; /* Cap max width */
+        height: auto; /* Adjust height */
+        min-height: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-left: auto; /* Center box */
+        margin-right: auto; /* Center box */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .related-products .pics-box {
+        width: 100%; /* Fluid width */
+        height: 150px; /* Adjust height */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+    }
+
+    .related-products .pricee {
+        color: gray;
+        font-weight: bold;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .super-dis {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 100px;
+        padding: 20px; /* Adjust padding */
+        margin: 15px auto;
+        background-color: #007BFF;
+        border-radius: 5px;
+        margin-bottom: 30px; /* Adjust margin */
+        color: white;
+        display: flex;
+        flex-direction: column; /* Stack content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .super-dis h3 {
+        font-size: 20px; /* Adjust font size */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    .super-dis p {
+        color: whitesmoke;
+        margin-bottom: 15px; /* Space below paragraph */
+    }
+
+    .super-dis button {
+        padding: 12px; /* Larger tap target */
+        width: 70%; /* Fluid width */
+        max-width: 180px; /* Cap max width */
+        background-color: rgb(236, 91, 39);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    /* cart page */
+    .cart-heading {
+        width: 95%; /* Fluid width */
+        height: auto;
+        margin: 15px auto;
+        text-align: center; /* Center heading */
+    }
+
+    .cart-panel {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 500px;
+        margin: 15px auto;
+        padding: 10px; /* Adjust padding */
+        display: flex;
+        flex-direction: column; /* Stack panels vertically */
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .boxx-panell {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Space between panels */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .boxx-panell .box {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 80px;
+        margin: 10px auto; /* Center box */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items if wrapped */
+    }
+
+    .pict-box {
+        width: 80px; /* Larger image */
+        height: 80px; /* Larger image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-shrink: 0;
+        margin-bottom: 10px; /* Space below image if wrapped */
+    }
+
+    .boxx-panell .details-box {
+        width: 100%; /* Full width for text */
+        height: auto; /* Adjust height */
+        margin-right: auto;
+        margin-left: auto; /* Center text */
+        text-align: center; /* Center text */
+    }
+
+    .boxx-panell p {
+        text-align: center; /* Center text */
+        margin-bottom: 5px;
+    }
+
+    .boxx-panell .seller,
+    .boxx-panell .quality {
+        font-weight: normal;
+        font-size: 13px; /* Slightly larger font */
+    }
+
+    .boxx-panell .savefl,
+    .boxx-panell .remove {
+        width: 48%; /* Adjust width for side-by-side */
+        max-width: 120px;
+        border-radius: 5px;
+        padding: 8px; /* Adjust padding */
+        margin: 5px 2%; /* Space between buttons */
+        font-size: 0.9rem;
+    }
+
+    .boxx-panell button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .buttonss {
+        margin-bottom: 10px;
+        width: 95%; /* Fluid width */
+        height: auto;
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center; /* Center buttons */
+        gap: 10px; /* Space between buttons */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-bfs,
+    .btn-ra {
+        width: 45%; /* Adjust width for side-by-side */
+        max-width: 150px;
+        height: 45px; /* Larger tap target */
+        margin-left: 0; /* Remove fixed margin */
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .price-qtyBox p {
+        text-align: center; /* Center text */
+        font-weight: bold;
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .price-qtyBox .qtyy {
+        margin-top: 5px;
+        width: 80px; /* Adjust width */
+        height: 25px; /* Adjust height */
+        margin-left: auto;
+        margin-right: auto; /* Center quantity input */
+        display: block;
+    }
+.cuponAsubtotal{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .cupon-panel {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 100px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Space below panel */
+        box-sizing: border-box;
+    }
+
+    .cupon-panel h4 {
+        margin-left: 10px; /* Adjust margin */
+        text-align: center; /* Center heading */
+    }
+
+    .cupon-panel input {
+        margin-left: auto; /* Center input */
+        margin-right: auto; /* Center input */
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 40px;
+        width: 70%; /* Fluid width */
+        max-width: 200px;
+        display: block;
+    }
+
+    .cupon-panel button {
+        height: 45px;
+        width: 80px;
+        color: #007BFF;
+        background-color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: auto; /* Center button */
+        margin-right: auto; /* Center button */
+        display: block;
+    }
+
+    .cupon-panel button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .subtotal {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;margin: 0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-left:20px;
+    }
+
+    .subtotal table {
+        border: none;
+        width: 95%; /* Fluid width */
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto; /* Center table */
+        font-size: 0.9rem;
+    }
+
+    .subtotal td {
+        text-align: right;
+        padding: 5px;
+    }
+
+    .subtotal th {
+        font-weight: normal;
+        background-color: white;
+        padding: 5px;
+    }
+
+    .totall th,
+    td {
+        font-weight: bold;
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .subtotal button {
+        padding: 10px; /* Adjust padding */
+        width: 90%; /* Fluid width */
+        max-width: 250px;
+        height: 50px; /* Larger tap target */
+        font-weight: bold;
+        font-size: 1.1rem;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 15px; /* Adjust margin */
+        margin-left: auto; /* Center button */
+        margin-right: auto; /* Center button */
+        display: block;
+    }
+
+    .add-info {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 60px;
+        display: flex;
+        flex-direction: row; /* Stack info boxes */
+        margin: 15px auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid #eee; /* Add separator */
+        border-bottom: 1px solid #eee; /* Add separator */
+    }
+
+    .Box1 {
+        display: flex;
+        justify-content: flex-start; /* Align left */
+        align-items: center;
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Space between stacked boxes */
+    }
+
+    .ii {
+        color: gray;
+        width: 35px; /* Larger icon */
+        height: 35px; /* Larger icon */
+        background-color: lightgray;
+        text-align: center;
+        font-size: large;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 10px; /* Space from text */
+    }
+
+    .Box1 p {
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+
+    .sfLater-panel {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 350px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .sfLater-panel h3 {
+        margin-left: 10px; /* Adjust margin */
+        text-align: center; /* Center heading */
+        margin-bottom: 15px; /* Space below heading */
+    }
+
+    .Boxx-panel {
+        display: flex;
+        flex-direction: column; /* Stack boxes vertically */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Space between stacked boxes */
+    }
+
+    .Boxx {
+        width: 90%; /* Fluid width */
+        max-width: 250px; /* Cap max width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        margin-left: auto; /* Center box */
+        margin-right: auto; /* Center box */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .Picss {
+        width: 100%; /* Fluid width */
+        height: 180px; /* Adjust height */
+        margin: 10px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: white;
+    }
+
+    .Boxx p {
+        margin-top: 5px;
+        margin-left: 0; /* Remove fixed margin */
+        text-align: center; /* Center text */
+    }
+
+    .ptag {
+        font-weight: bold;
+        font-size: 1.1rem; /* Slightly larger */
+    }
+
+    .dtag {
+        font-size: small;
+        color: gray;
+    }
+
+    .Boxx button {
+        margin-top: 15px; /* Adjust margin */
+        margin-left: auto; /* Center button */
+        margin-right: auto; /* Center button */
+        padding: 10px; /* Larger tap target */
+        width: 80%; /* Fluid width */
+        max-width: 150px;
+        background-color: white;
+        color: #007bff;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .Boxx button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+}
+
+
+@media  (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    height: auto;
+  }
+
+  .nav-lb {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  .searchbar {
+    width: 55%;
+  margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-select,
+  .search-button {
+    width: 70px; /* Adjust button and select width */
+  }
+
+  .icons {
+    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+    gap: 15px; 
+  }
+
+  .icon-profile,
+  .icon-message,
+  .icon-orders,
+  .icon-cart {
+    width: 60px; /* Smaller icon boxes */
+    height: 45px;
+  }
+
+  .icon-p,
+  .icon-m,
+  .icon-o,
+  .icon-c {
+    font-size: 0.9rem; /* Smaller text for icons */
+  }
+
+  .panel {
+    height: auto;
+    padding: 5px;
+    align-items: flex-start;
+  }
+
+  .panel-all {
+    margin-left: 10px;
+  }
+
+  .panel-option {
+    padding: 8px 12px; 
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .panel-option a,
+  .panel-option select {
+    justify-content: space-evenly;
+    margin-left: 0;
+    display: inline; /* Make links/selects block-level for better touch */
+    
+  }
+
+  .panel-language,
+  .panel-country {
+
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .bannerimg {
+    width: 100%;
+    height: 350px; /* Smaller banner image */
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .banner-content {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .content {
+    width: 100%; /* Full width for content boxes */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .login {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .text {
+    width: auto;
+    margin-left: 15px;
+  }
+
+  .login button {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .discount,
+  .quotes {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    height: auto;
+  }
+
+  .deals-panel,
+  .homeOutdoor-panel,
+  .Consumer-panel,
+  .requests-panel,
+  .recommended-panel,
+  .recommendedd-panel,
+  .servicess-panel,
+  .countries-panel {
+    flex-direction: column;
+    width: 90%;
+    height:50%;
+    margin: 10px auto;
+    padding: 15px;
+    justify-content: center;
+  }
+.deals-panel, .homeOutdoor-panel, .Consumer-panel {
+    width: 85%;
+    padding: 10px;
+  }
+  .offer-box {
+  width:50%;
+  }
+.offer-box{
+}
+  .component1,
+  .component2,
+  .component3,
+  .component4 {
+    width: 45%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .component1 .box,
+  .box1,
+  .boxx1,
+  .boxx2,
+  .service1,
+  .bbox {
+    width: 30%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+.homeOutdoor-panel{
+    flex-direction: column;
+}
+.home-decor ,.cons-eg{
+    margin:auto;
+    width: 400px;
+    height:200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .component2 ,.component3{
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: space-evenly;
+      border:none;
+  }
+  .component2 .box1,.component3 .boxx1
+  {
+    height:20%;
+    width:fit-content;
+  
+  }
+
+  .requests-panel {
+   height:10%;
+  }
+.textt{
+     margin:none;
+     height:fit-content;
+     width:auto;
+text-align: center;
+}
+  .component4 {
+    margin: 10px;;
+    width: 90%;
+    padding: 15px;
+    
+  }
+
+  .recommended-panel,.recommendedd-panel{
+    width:80%;
+    display: flex;
+    margin:2px auto;
+    flex-direction: column;
+    gap:5px;
+
+  }
+  .boxx2{
+    height:100px;
+    width:250px;
+    display: flex;;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .picturesss{
+    height:90%;
+width:50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+  }
+  .t-shirt,.jacket,.coat,.wallet,.bag,.shorts,.office,.watcch,.mobilee,.headphones{
+    height:90%; }
+
+  .seccc{
+    margin-left:5px;
+  }
+  .newsletter-panel {
+    height:auto;
+    padding: 15px;
+  }
+
+  .newsletter {
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  .newsletter input {
+    margin-left: 0;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .newsletter button {
+    display: block;
+    margin: 10px auto;
+  }
+.main-footer {
+        padding: 30px 20px 15px;
+        gap: 25px; /* Adjust vertical gap */
+    }
+.footer-panel {
+         grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 25px;
+    padding: 25px 20px;
+    flex-direction: column; /* Stack columns vertically */
+        padding: 30px 20px; /* Adjust padding for mobile */
+        gap: 30px; /* Add more vertical space between stacked sections */
+        align-items: flex-start; /* Align stacked content to the left */
+        /* If your footer container has a fixed width on desktop, remove it here: */
+        width: auto; /* Let it adapt to the viewport width */
+        max-width: 100%;
+        margin: 0; /* Remove auto margins if present from desktop */
+        justify-content: space-evenly;
+    }
+
+    .brand-section {
+        margin-right: 0; /* No right margin when stacked */
+        width: 100%; /* Take full width */
+        align-items: center; /* Center brand logo and description */
+        text-align: center; /* Center text within this section */
+    }
+
+    .brand-description {
+        max-width: 90%; /* Limit width of description for readability, but make it wider than 250px */
+        margin-left: auto; /* Center the description */
+        margin-right: auto;
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons */
+        width: 100%; /* Take full width to help centering */
+    }
+
+    /* Adjust general footer columns */
+    .footer-column {
+        text-align: left; /* Align text to left */
+    margin-bottom: 0;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 15px; /* Adjust heading margin */
+    }
+
+    .footer-column ul {
+        width: 100%; /* Ensure ul takes full width to center list items */
+    }
+    .footer-column ul li {
+        margin-bottom: 8px; /* Reduce list item spacing */
+    }
+    .footer-column ul li a {
+        font-size: 13px; /* Smaller font size for links */
+    }
+
+    /* Adjust app download buttons column */
+    .app-buttons {
+flex-direction: row; /* Side-by-side app buttons */
+    justify-content: flex-start;    }
+
+    .app-button img {
+        width: 120px; /* Smaller app button images */
+    }
+
+    /* Adjust copyrights section */
+    .copyrights {
+        height: auto; /* Allow height to adapt to content on mobile */
+        padding: 15px 20px; /* Adjusted padding for smaller screens */
+        text-align: center; /* Ensure text is centered */
+        font-size: 12px; /* Smaller copyright text for mobile */
+        /* If padding-left was explicitly set higher on desktop, reset it for consistency */
+        padding-left: 20px; /* Make sure this matches padding-right if you want equal horizontal padding */
+        padding-right: 20px; /* Explicitly set padding-right if using padding-left */
+        margin-top: 15px; /* Slightly reduce top margin for mobile */
+        /* flex-wrap: nowrap; - Still not typically necessary here as it's a single line of text */
+    }
+ 
+
+  /* Specific adjustments for product listings (main-container) */
+  .page-container {
+    flex-direction: row; /* Stack sidebar and main content */
+  }
+
+  .sidebar {
+    width: 25%;
+    margin-bottom: 20px;
+    padding-right: 15px;
+  }
+
+  .main-container {
+    width: 75%;
+    padding: 10px;
+  }
+
+  .featured {
+    width:90%;
+    height: 5%;
+    padding: 10px;
+    align-items: flex-start;
+justify-content:space-evenly;
+  }
+
+  .featured select {
+    width: 150px; /* Fixed width for dropdowns */
+    
+  }
+
+  .fii {
+    width: 100%;
+    justify-content: flex-end; /* Align view buttons to the right */
+  }
+
+  .container {
+    flex-direction: row ;/* Stack image and details in list view */
+    height: fit-content;
+    width:90%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .piiictures {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width: 180px; /* Adjust image size for list view on small screens */
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .piiictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .details div {
+    justify-content: center; /* Center rating and orders */
+  }
+
+  .des, .shipping, .circle {
+    font-size: 0.85rem;
+  }
+
+  .entries {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .show {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .pagination {
+    margin-left: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Grid view adjustments for small screens */
+  .product-list.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Smaller grid items */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product-list.grid-view .container {
+    padding: 10px;
+  }
+
+  .product-list.grid-view .piiictures {
+    height: 120px;
+    width: 120px;
+  }
+  .pic-des {
+        width: 95%; /* Make it fluid for smaller screens */
+        height: auto; /* Adjust height automatically */
+        min-height: 300px; /* Ensure minimum height */
+        margin: 15px auto; /* Adjust margin */
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center content */
+        align-items: center; /* Center content horizontally */
+        padding: 10px; /* Add some padding */
+        box-sizing: border-box; /* Include padding in width/height */
+    }
+
+    .pics {
+        margin-top: 15px; /* Adjust margin */
+        width: 90%; /* Fluid width */
+        max-width: 250px; /* Cap the max width */
+        height: 200px; /* Keep consistent height */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .descriptionss {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 20px; /* Adjust margin */
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px; /* Add padding */
+        box-sizing: border-box;
+    }
+
+    .descriptionss li i {
+        color: rgb(243, 181, 25);
+        font-size: 0.8rem; /* Slightly larger for touch */
+    }
+
+    .descriptionss div {
+        margin-top: 10px; /* Adjust margin */
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center wrapped items */
+        text-align: center;
+    }
+
+    .descriptionss .circle,
+    .stars {
+        margin: 0 5px; /* Adjust spacing */
+    }
+
+    .descriptionss .orderss,
+    .descriptionss .rating {
+        font-size: 14px; /* Slightly larger font */
+    }
+
+    .pprices-div {
+        width: 90%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 70px; /* Ensure enough height */
+        margin: 15px auto; /* Adjust margin */
+        background-color: rgb(249, 202, 185);
+        display: flex;
+        flex-direction: column; /* Stack price blocks vertically */
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .block {
+        width: 100%; /* Full width within its parent */
+        height: auto;
+        margin-bottom: 8px; /* Space between stacked blocks */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block h4 {
+        text-align: center;
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .block p {
+        font-size: 0.95rem; /* Slightly larger font */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .suppliers {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 250px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 15px; /* Add padding */
+        box-sizing: border-box;
+        text-align: center; /* Center content */
+    }
+
+    .sup-text {
+        font-size: 1.3rem; /* Larger font */
+        font-weight: bold;
+        margin-top: 10px; /* Adjust margin */
+        margin-left: 0; /* Remove fixed margin */
+    }
+
+    .info {
+        margin-top: 10px;
+        margin-left: 0; /* Remove fixed margin */
+        font-size: 0.95rem; /* Slightly larger font */
+        color: #666;
+    }
+
+    .inquiry,
+    .sellprof {
+        margin-top: 15px;
+        margin-left: auto; /* Center buttons */
+        margin-right: auto; /* Center buttons */
+        display: block; /* Make them block elements to stack */
+        padding: 12px; /* Increase padding for tap targets */
+        width: 80%; /* Fluid width */
+        max-width: 200px; /* Cap max width */
+        font-size: 1rem; /* Larger font for buttons */
+        box-sizing: border-box;
+    }
+
+    .sellprof {
+        margin-top: 10px; /* Space between buttons */
+    }
+
+    .inquiry:hover {
+        border: 1px solid white;
+    }
+
+    .sellprof:hover {
+        border: 1px solid #007bff;
+    }
+
+    .saved {
+        color: #007bff;
+        font-weight: bold;
+        margin-top: 20px; /* Adjust margin */
+        margin-left: 0; /* Remove fixed margin */
+        text-align: center; /* Center text */
+    }
+
+    .Tabble {
+        margin-top: 20px;
+        background-color: white;
+        border: none;
+        width: 95%; /* Fluid width */
+        margin-left: auto; /* Center table */
+        margin-right: auto; /* Center table */
+        box-sizing: border-box;
+    }
+
+    .Tabble td {
+        text-align: left;
+        font-weight: lighter;
+        font-size: small;
+        padding: 8px 5px; /* Adjust padding */
+    }
+
+    .Tabble th {
+        font-weight: lighter;
+        font-size: small;
+        color: gray;
+        background-color: white;
+        padding: 8px 5px; /* Adjust padding */
+    }
+
+    .review-description {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 350px;
+        margin: 15px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column; /* Stack panels vertically */
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .review-description .panel1 {
+        height: auto; /* Adjust height */
+        width: 95%; /* Fluid width */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; /* Space between stacked panels */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .heading-panel {
+        width: 100%;
+        height: auto; /* Adjust height */
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    .heading-panel li {
+        margin: 5px 10px; /* Adjust margin for wrapped items */
+        text-decoration: none;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .heading-panel a:hover {
+        color: #007BFF;
+        text-decoration: underline;
+    }
+
+    .review-description .panel1 p {
+        font-size: 0.9rem;
+        margin-left: 0; /* Remove fixed margin */
+        text-align: center; /* Center text */
+        padding: 0 10px; /* Add padding */
+    }
+
+    table {
+        width: 95%; /* Fluid width */
+        text-align: left;
+        border: 1px solid #ccc; /* Lighter border */
+        margin: 10px auto; /* Center table */
+        font-size: 0.85rem;
+    }
+
+    th {
+        background-color: #e0e0e0; /* Lighter background */
+        padding: 8px;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    .review-description .panel2 {
+        background-color: white;
+        width: 95%; /* Fluid width */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        font-family: Arial, sans-serif;
+        height: auto; /* Adjust height */
+        min-height: 280px;
+        box-sizing: border-box;
+    }
+
+    .cartii .bicon,
+    .buy {
+        margin-top: 10px;
+        margin-left: auto; /* Center buttons */
+        margin-right: auto; /* Center buttons */
+        width: 80%; /* Fluid width */
+        max-width: 150px; /* Cap max width */
+        height: 45px; /* Larger tap target */
+        background-color: white;
+        color: #007BFF;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        display: block; /* Make them block to stack */
+        font-size: 1rem;
+    }
+
+    .buy {
+        margin-top: 15px;
+    }
+
+    .box-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Increase gap */
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 60px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #eee; /* Subtle border for boxes */
+        border-radius: 5px;
+    }
+
+    .picss-box {
+        background-color: white;
+        height: 60px; /* Adjust size */
+        width: 90px; /* Adjust size */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        margin-right: 10px; /* Adjust margin */
+        flex-shrink: 0;
+    }
+
+    .details-box p {
+        margin-bottom: 5px; /* Adjust margin */
+        margin-right: 5px; /* Adjust margin */
+        font-size: 13px; /* Slightly larger font */
+        font-weight: bold;
+        display: block;
+    }
+
+    .details-box .price {
+        color: gray;
+        font-size: 14px; /* Slightly larger font */
+        margin-top: 5px;
+        text-align: left; /* Align price with text */
+        margin-bottom: auto;
+    }
+
+    .related-products {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .related-products h3 {
+        margin-left: 10px; /* Adjust margin */
+        margin-bottom: 10px; /* Space below heading */
+        font-size: large;
+        text-align: center; /* Center heading */
+    }
+
+    .box-panell {
+        display: flex;
+        flex-direction: column; /* Stack related products vertically */
+        align-items: center; /* Center items */
+        gap: 15px; /* Space between stacked products */
+    }
+
+    .related-products .box {
+        margin-top: 0;
+        width: 90%; /* Fluid width */
+        max-width: 250px; /* Cap max width */
+        height: auto; /* Adjust height */
+        min-height: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-left: auto; /* Center box */
+        margin-right: auto; /* Center box */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .related-products .pics-box {
+        width: 100%; /* Fluid width */
+        height: 150px; /* Adjust height */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+    }
+
+    .related-products .pricee {
+        color: gray;
+        font-weight: bold;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .super-dis {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 100px;
+        padding: 20px; /* Adjust padding */
+        margin: 15px auto;
+        background-color: #007BFF;
+        border-radius: 5px;
+        margin-bottom: 30px; /* Adjust margin */
+        color: white;
+        display: flex;
+        flex-direction: column; /* Stack content */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .super-dis h3 {
+        font-size: 20px; /* Adjust font size */
+        margin-bottom: 10px; /* Space below heading */
+    }
+
+    .super-dis p {
+        color: whitesmoke;
+        margin-bottom: 15px; /* Space below paragraph */
+    }
+
+    .super-dis button {
+        padding: 12px; /* Larger tap target */
+        width: 70%; /* Fluid width */
+        max-width: 180px; /* Cap max width */
+        background-color: rgb(236, 91, 39);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    /* cart page */
+    .cart-heading {
+        width: 95%; /* Fluid width */
+        height: auto;
+        margin: 15px auto;
+        text-align: center; /* Center heading */
+    }
+
+    .cart-panel {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 500px;
+        margin: 15px auto;
+        padding: 10px; /* Adjust padding */
+        display: flex;
+        flex-direction: row; /* Stack panels vertically */
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        gap:20px;
+    }
+
+    .boxx-panell {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Space between panels */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .boxx-panell .box {
+        width: 95%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 80px;
+        margin: 10px auto; /* Center box */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items if wrapped */
+    }
+
+    .pict-box {
+        width: 80px; /* Larger image */
+        height: 80px; /* Larger image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-shrink: 0;
+        margin-bottom: 10px; /* Space below image if wrapped */
+    }
+
+    .boxx-panell .details-box {
+        width: 100%; /* Full width for text */
+        height: auto; /* Adjust height */
+        margin-right: auto;
+        margin-left: auto; /* Center text */
+        text-align: center; /* Center text */
+    }
+
+    .boxx-panell p {
+        text-align: center; /* Center text */
+        margin-bottom: 5px;
+    }
+
+    .boxx-panell .seller,
+    .boxx-panell .quality {
+        font-weight: normal;
+        font-size: 13px; /* Slightly larger font */
+    }
+
+    .boxx-panell .savefl,
+    .boxx-panell .remove {
+        width: 48%; /* Adjust width for side-by-side */
+        max-width: 120px;
+        border-radius: 5px;
+        padding: 8px; /* Adjust padding */
+        margin: 5px 2%; /* Space between buttons */
+        font-size: 0.9rem;
+    }
+
+    .boxx-panell button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .buttonss {
+        margin-bottom: 10px;
+        width: 95%; /* Fluid width */
+        height: auto;
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center; /* Center buttons */
+        gap: 10px; /* Space between buttons */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-bfs,
+    .btn-ra {
+        width: 45%; /* Adjust width for side-by-side */
+        max-width: 150px;
+        height: 45px; /* Larger tap target */
+        margin-left: 0; /* Remove fixed margin */
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .price-qtyBox p {
+        text-align: center; /* Center text */
+        font-weight: bold;
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .price-qtyBox .qtyy {
+        margin-top: 5px;
+        width: 80px; /* Adjust width */
+        height: 25px; /* Adjust height */
+        margin-left: auto;
+        margin-right: auto; /* Center quantity input */
+        display: block;
+    }
+.cuponAsubtotal{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .cupon-panel {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 100px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Space below panel */
+        box-sizing: border-box;
+    }
+
+    .cupon-panel h4 {
+        margin-left: 10px; /* Adjust margin */
+        text-align: center; /* Center heading */
+    }
+
+    .cupon-panel input {
+        margin-left: auto; /* Center input */
+        margin-right: auto; /* Center input */
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        height: 40px;
+        width: 70%; /* Fluid width */
+        max-width: 200px;
+        display: block;
+    }
+
+    .cupon-panel button {
+        height: 45px;
+        width: 80px;
+        color: #007BFF;
+        background-color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: auto; /* Center button */
+        margin-right: auto; /* Center button */
+        display: block;
+    }
+
+    .cupon-panel button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .subtotal {
+        width: 98%; /* Fluid width */
+        height: auto; /* Adjust height */
+        min-height: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;margin: 0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-left:20px;
+    }
+
+    .subtotal table {
+        border: none;
+        width: 95%; /* Fluid width */
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto; /* Center table */
+        font-size: 0.9rem;
+    }
+
+    .subtotal td {
+        text-align: right;
+        padding: 5px;
+    }
+
+    .subtotal th {
+        font-weight: normal;
+        background-color: white;
+        padding: 5px;
+    }
+
+    .totall th,
+    td {
+        font-weight: bold;
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .subtotal button {
+        padding: 10px; /* Adjust padding */
+        width: 90%; /* Fluid width */
+        max-width: 250px;
+        height: 50px; /* Larger tap target */
+        font-weight: bold;
+        font-size: 1.1rem;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 15px; 
+        margin-left: auto; 
+        margin-right: auto; /* Center button */
+        display: block;
+    }
+
+    .add-info {
+        width: 95%; 
+        height: auto; 
+        min-height: 60px;
+        display: flex;
+        flex-direction: row;
+        margin: 15px auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid #eee; 
+        border-bottom: 1px solid #eee; 
+    }
+
+    .Box1 {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .ii {
+        color: gray;
+        width: 35px; 
+        height: 35px; 
+        background-color: lightgray;
+        text-align: center;
+        font-size: large;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-right: 10px; 
+    }
+
+    .Box1 p {
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+
+    .sfLater-panel {
+        width: 95%; 
+        height: auto;
+        min-height: 350px;
+        margin: 20px auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .sfLater-panel h3 {
+        margin-left: 10px; 
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+
+    .Boxx-panel {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .Boxx {
+        width: 90%; 
+        max-width: 250px; 
+        height: auto; 
+        min-height: 300px;
+        margin-left: auto; 
+        margin-right: auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .Picss {
+        width: 100%;
+        height: 180px; 
+        margin: 10px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: white;
+    }
+
+    .Boxx p {
+        margin-top: 5px;
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .ptag {
+        font-weight: bold;
+        font-size: 1.1rem; 
+    }
+
+    .dtag {
+        font-size: small;
+        color: gray;
+    }
+
+    .Boxx button {
+        margin-top: 15px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        padding: 10px; 
+        width: 80%; 
+        max-width: 150px;
+        background-color: white;
+        color: #007bff;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .Boxx button:hover {
+        border: 1px solid gray;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+}
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <div class="navbar">
+    <div class="nav-lb">
+   <a href="home.html" class="home-link">
+      <div class="nav-logo">
+        <div class="logo"></div>
+      </div>
+      <div class="logo-brand">
+        <h5 class="brandname">Brand</h5>
+      </div>
+    </a>
+   </div>
+  
+
+   <div class="searchbar">
+    <input placeholder="Search" class="searchinput">
+    <select class="search-select">
+        <option>All category</option>
+    </select>
+    <button class="search-button">Search</button>
+    </div>
+    
+    <div class="icons">
+        <div class="icon-profile">
+            <i class="fa-solid fa-circle-user profile" ></i>
+            <a href="#"class="icon-p">Profile</a>
+        </div>
+        <div class="icon-message">
+            <i class="fa-solid fa-message message"></i>
+            <a href="#"class="icon-m">Message</a>
+        </div>
+        <div class="icon-orders">
+            <i class="fa-solid fa-heart heart"></i>
+            <a href="#"class="icon-o">Orders</a>
+        </div>
+        <div class="icon-cart">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+            <a href="cart.html"class="icon-c">My Cart</a>
+
+        </div>
+    </div>
+
+   </div>
+   <div class="panel">
+    <div class="panel-all">
+         <i class="fa-solid fa-bars"></i>
+         <a href="#">All category</a>
+    </div>
+    <div class="panel-option">
+        <a href="#">Hot offers</a>
+        <a href="#">Gift boxes</a>
+  <a href="#">Projects</a>
+  <a href="#">Menu item</a>        
+  <select>
+            <option>
+                  <a href="#">Help</a>
+            </option>
+        </select>
+    </div>
+    <div class="panel-language">
+        <select>
+            <option>English,USD</option>
+        </select>
+    </div>
+    <div class="panel-country">
+        <select >
+             <option>Ship to USA</option>
+             <option>Ship to UK</option>
+              <option>Ship to Pak</option>
+        </select>
+    </div>
+   </div>
+   
+<hr>
+<div class="page-container">
+
+<aside class="sidebar">
+    <div class="sidebar-section">
+        <h3 class="sec-title">Category</h3>
+        <ul>
+            <li><a href="#"class="active">Mobile accessory</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Modern tech</a></li>
+        </ul>
+        <button class="seeAll" data-target="category-list">See all</button>
+        <ul class="collapsed-list" id="category-list">
+        <li><a href="#">Wearables</a></li>
+                <li><a href="#">Audio Devices</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Tablets</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-section">
+        <h3 class="sec-title">Brands</h3>
+        <div class="filter-op">
+            <label><input type="checkbox" checked>Samsung</label>
+            <label><input type="checkbox" checked>Apple</label>
+            <label><input type="checkbox" checked>Huawei</label>
+            <label><input type="checkbox" checked>Pocco</label>
+            <label><input type="checkbox" checked>Lenovo</label>
+        </div>
+        <button class="seeAll" data-target="brand-list">See all</button>
+        <div class="collapsed-list filter-op" id="brand-list">
+             <label><input type="checkbox"> Xiaomi</label>
+                <label><input type="checkbox"> Google</label>
+                <label><input type="checkbox"> Sony</label>
+        </div>
+    </div>
+     <div class="sidebar-section">
+            <h3 class="sec-title">Features</h3>
+            <div class="filter-op">
+                <label><input type="checkbox" checked> Metallic</label>
+                <label><input type="checkbox"> Plastic cover</label>
+                <label><input type="checkbox"> 8GB Ram</label>
+                <label><input type="checkbox"> Super power</label>
+                <label><input type="checkbox"> Large Memory</label>
+            </div>
+            <button class="seeAll" data-target="features-list">See all</button>
+            <div class="collapsed-list filter-op" id="features-list">
+                <label><input type="checkbox"> Water Resistant</label>
+                <label><input type="checkbox"> Wireless Charging</label>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <h3 class="sec-title dropdown-toggle">Price range <i class="fas fa-chevron-down"></i></h3>
+            <div class="dropdown-cont">
+                <input type="range" id="priceR" min="0" max="1000" value="500" class="slider">
+                <p>Value:<span id="priceValue">$500</span></p>
+                <button>Apply</button>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <h3 class="sec-title dropdown-toggle">Condition <i class="fas fa-chevron-down"></i></h3>
+            <div class="dropdown-cont">
+                <label><input type="radio" name="condition" value="new"> New</label><br>
+                <label><input type="radio" name="condition" value="used"> Used</label>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <h3 class="sec-title dropdown-toggle">Ratings <i class="fas fa-chevron-down"></i></h3>
+            <div class="dropdown-cont">
+                <label><input type="radio" name="rating" value="5star"> 5 Stars & Up</label><br>
+                <label><input type="radio" name="rating" value="4star"> 4 Stars & Up</label><br>
+                <label><input type="radio" name="rating" value="3star"> 3 Stars & Up</label>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="sec-title dropdown-toggle">Manufacturer <i class="fas fa-chevron-down"></i></h3>
+            <div class="dropdown-cont">
+                <input type="text" placeholder="Search manufacturer">
+            </div>
+        </div>
+</aside>
+<div class="main-container">
+    <div class="breadcrumb">
+                Home > Clothings > Men's wear > Summer clothing
+    </div>
+<div class="featured">
+    <p>12,911 items in <b>Mobile accessory</b></p>
+    <label><input type="checkbox" id="checks">Verified only</label>
+<select>
+    <option>Featured</option>
+</select>
+    <div class="fii">
+        <div class="fi" id="gridViewBtn">
+        <i class="fa-solid fa-table-cells Cells"></i>
+        </div>
+    <div class="fi" id="listViewBtn">
+    <i class="fa-solid fa-bars Barrs"></i>
+    </div>
+    </div>
+
+</div>
+
+<div class="product-list" id="productList">
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/phone1.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li>
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/canon.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li>
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/phone2.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li>
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/laptop.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li class="stars">
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/watch.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li>
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="piiictures">
+        <img src="assets/headphone.png">
+    </div>
+    <div class="details">
+        <p class="tiitle"> Canon Cmera EOS 2000, Black 10x zoom</p>
+        <p class="amount">$998.00</p>
+        <div>
+        <li>
+<i class="fa-solid fa-star"></i> 
+           <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </li>
+        <p class="rating">7.5</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="orderss">154 orders</p>
+        <i class="fa-solid fa-circle circle"></i>
+        <p class="shipping">Free shipping</p>
+        </div>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua</p>
+ <a href="details.html">View Details</a>
+<div class="fav">
+ <i class="fa-regular fa-heart hearrt"></i>
+ </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="entries">
+ <select class="show">
+        <option>Show 10</option>
+</select>
+ <div class="pagination">
+    <button disabled>&lt;</button>
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>&gt;</button>
+</div>
+ </div>
+        <div class="newsletter-panel">
+            <div class="newsletter">
+                <p class="subscribe"> Subscribe on our newsletter</p>
+                <p class="dn"> Get daily news on upcoming offers from many suppliers all over the world</p>
+                
+                <input placeholder="Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-panel">
+            <div class="brand-section footer-column">
+            <div class="brand-logo">
+                    <img src="assets/logo-symbol.png">
+                <span>Brand</span>
+            </div>
+            <p class="brand-description">
+                Best information about the company gies here but now lorem ipsum is
+            </p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Partnership</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Money Refund</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>For users</h4>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Get app</h4>
+            <div class="app-buttons">
+                <a href="#" class="app-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store">
+                </a>
+                <a href="#" class="app-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="copyrights">
+             © 2025 Ecommerce. 
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
